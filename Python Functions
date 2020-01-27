@@ -1,0 +1,248 @@
+Topics
+*****************************************************
+Math operators
+String
+Sciling
+List
+Ifelse
+For
+range and while
+comments anf Break
+Continue
+Function
+Return Values
+Default Values for arguments
+Variable Scope
+Keyword Arguments
+Flexible Number of Arguments
+Unpacking Arguments
+My trip to Walmart and Sets
+Dictionary
+***********************************************************
+Pro:1
+name= "pinky"
+if name is "hari":
+   print("my bro name")
+elif name is "sai":
+    print("my sis name")
+elif name is "pinky":
+    print("my name")
+else:
+    print("unknow")
+
+O/P:
+
+my name
+
+Pro:2
+
+fruits=[apple,grape,mango,berry]
+  for i in fruits:
+      print(f)
+
+Pro:3
+fruits=["apple","grape","mango","berry"]
+for i in fruits:
+    print(i)
+    print(len(i))
+
+O/P:
+apple
+5
+grape
+5
+mango
+5
+berry
+5
+
+Pro:4
+
+for i in range(10,40,5):
+    print(i)
+
+O/P:
+
+10
+15
+20
+25
+30
+35
+
+Pro:5
+magicnum=10
+for i in range(20):
+    if i is magicnum:
+        print(i,"magicnum")
+        break
+    else:
+        print(i)
+
+O/P: 
+
+
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10 magicnum
+
+Pro:6
+samp=[2,4,6,9]
+for i in range(1,20):
+    if i in samp:
+         continue
+    print(i)
+
+O/P:
+
+1
+3
+5
+7
+8
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+
+Pro:7
+def beef():
+    print("i am cool")
+def bigcoin(btc):
+    amount=btc*200
+    print(amount)
+beef()
+bigcoin(1)
+bigcoin(2)
+bigcoin(3)
+
+O/P:
+
+i am cool
+200
+400
+600
+
+pro:8
+
+def allow_age(myage):
+    girl_age=myage/2+4
+    return girl_age
+limit_age=allow_age(20)
+print ("age", limit_age)
+
+O/P:
+age 14.0
+
+Pro:9
+def person(sex= 'unknow'):
+    if sex in 'm':
+       sex= 'male'
+    elif sex in 'f':
+       sex= 'female'
+    print(sex)
+person('m')
+person('f')
+person()
+
+O/P:
+
+male
+female
+unknow
+
+Pro:10
+If the variable is outside of the function then two functions can access same variable.
+a=123
+def conf():
+    print(a)
+def grant():
+    print(a)
+conf()
+grant()
+
+O/P:
+
+123
+123
+
+If you assign variable inside function then it will work only for that paticular function
+
+Pro:11
+
+def info(name="bucky",item="bag",plc="hyd"):
+    print(name,item,plc)
+info()
+info(item="lap")
+info(item="pen",plc="bglr")
+info("sam","ball","us")
+
+O/P:
+
+bucky bag hyd
+bucky lap hyd
+bucky pen bglr
+sam ball us
+
+Pro:12
+Can give n number of arguments
+def add_num(*args):
+    total = 0
+    for a in args:
+        total +=a
+    print(total)
+add_num(3)
+add_num(3,5,7)
+O/P
+
+3
+15
+
+Pro:13
+def bucky_info(age,profit,loss):
+    sol=(100-age)+(profit*2)-(loss*1)
+    print(sol)
+bucky=[20,30,10]
+bucky_info(bucky[1],bucky[0],bucky[2])
+bucky_info(bucky[0],bucky[1],bucky[2])
+bucky_info(*bucky)
+
+O/P:
+100
+130
+130
+
+Pro:14
+mart={"milk","salt","water","sugar","powder"}
+print(mart)
+if 'milk' in mart:
+    print("yes avaliable")
+else:
+    print("not avaliable")
+
+O/P:
+
+{'salt', 'water', 'sugar', 'powder', 'milk'}
+yes avaliable
+
+Pro:15
+class = {"book":"i have social book","pen":"i have two pens","bag":"i have one bag"}
+for k,v in class.items():
+    print(k+v)
+    
+    
